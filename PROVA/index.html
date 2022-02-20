@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
+    <title>PROVA</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Cadastro</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue " id="cadastrarC">Cadastrar</button>
+        <table id="tableC" class="records">
+            <thead>
+                <tr>
+                    <th>codigo</th>
+                    <th>Nome</th>
+                    <th>sexo</th>
+                    <th>idade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <table id="tableC2" class="records">
+           <h2 class="header-title"> LISTA POR GENERO </h2>
+            <thead>
+                <tr>
+                    <th>codigo</th>
+                    <th>Nome</th>
+                    <th>sexo</th>
+                    <th>idade</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <table id="tableC3" class="records">
+            <h2 class="header-title"> LISTA CLASSIFICAÇÃO POR IDADE </h2>
+             <thead>
+                 <tr>
+                     <th>codigo</th>
+                     <th>Nome</th>
+                     <th>sexo</th>
+                     <th>idade</th>
+                     <th>classificação</th>
+                 </tr>
+             </thead>
+             <tbody>
+             </tbody>
+         </table>
+        
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cadastro</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="codigo" data-index="new" class="modal-field" placeholder="codigo"
+                        required>
+                    <input type="text" id="nome" class="modal-field" placeholder="Nome" required>
+                    <select class="modal-field" id="sexo"   required>
+                        <option >MASCULINO</option>
+                        <option>FEMININO</option>
+                    </select>
+
+                    <input type="text" id="idade" class="modal-field" placeholder="idade" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Teste Dev by Dionney
+    </footer>
+</body>
+
+</html>
